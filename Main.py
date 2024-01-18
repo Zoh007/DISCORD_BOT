@@ -3,7 +3,7 @@ from discord.ext import commands
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='', intents=intents)
-Token = "MTA4NzEyNDIxNjczNTg3OTI0OA.Gp7O7S.bEwlWLX7kZ0mI9noehPy7_3IhtJBVsf2BT1f5E"
+Token = input("What is your token?")
 
 
 @bot.event
