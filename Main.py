@@ -23,7 +23,7 @@ async def hi(ctx):
 
 # @bot.command()
 # async def testmessage(ctx, user_mention, *, message):
-#   if ctx.channel.id == 1156608903832940674:
+#   if ctx.channel.id ==:
 #     user_send = ctx.message.mentions[0]
 #     await user_send.send("Message: " + message + " from " + ctx.author.name)
 #   else:
