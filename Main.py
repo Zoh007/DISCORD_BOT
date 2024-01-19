@@ -4,7 +4,7 @@ from discord.ext import commands
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='', intents=intents)
 Token = input("What is your token? ")
-print("Token is: " + Token)
+print("Token is: " + Token + "\n")
 
 @bot.event
 async def on_ready():
