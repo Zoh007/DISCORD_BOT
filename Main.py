@@ -3,8 +3,8 @@ from discord.ext import commands
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='', intents=intents)
-Token = input("What is your token?")
-
+Token = input("What is your token? ")
+print("Token is: " + Token)
 
 @bot.event
 async def on_ready():
