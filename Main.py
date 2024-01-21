@@ -11,14 +11,14 @@ async def on_ready():
   print("online", bot.user.name)
 
 # Only uncomment the following code if know your channel id's
-@bot.command()
-async def hi(ctx):
-  channel_id = input("What is your channel id? ")
-  if ctx.channel.id == channel_id:
-    author_name = ctx.author.name
-    await ctx.channel.send(
-      'This is the designated channel for welcoming new members!')
-    await ctx.send("Hi " + author_name)
+# @bot.command()
+# async def hi(ctx):
+#   channel_id = input("What is your channel id? ")
+#   if ctx.channel.id == channel_id:
+#     author_name = ctx.author.name
+#     await ctx.channel.send(
+#       'This is the designated channel for welcoming new members!')
+#     await ctx.send("Hi " + author_name)
 
 
 # @bot.command()
