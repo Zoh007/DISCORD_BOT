@@ -11,9 +11,9 @@ async def on_ready():
   print("online", bot.user.name)
 
 # Only uncomment the following code if know your channel id's
-# @bot.command()
+@bot.command()
 # async def hi(ctx):
-#   channel_id = input("What is your channel id? ")
+#   channel_id = input("What is your channel id? (Would be used to welcome new members)") ## This is a command for welcoming new mwmbers
 #   if ctx.channel.id == channel_id:
 #     author_name = ctx.author.name
 #     await ctx.channel.send(
@@ -28,6 +28,5 @@ async def on_ready():
 #     await user_send.send("Message: " + message + " from " + ctx.author.name)
 #   else:
 #     None
-
 
 bot.run(Token)
