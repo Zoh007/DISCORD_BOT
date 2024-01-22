@@ -1,8 +1,5 @@
-try:
-    import discord
-    from discord.ext import commands
-except:
-   print()
+import discord
+from discord.ext import commands
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='', intents=intents)
@@ -33,11 +30,4 @@ async def on_ready():
 #     await user_send.send("Message: " + message + " from " + ctx.author.name)
 #   else:
 #     None
-<<<<<<< Updated upstream
   bot.run(Token)
-=======
-    
-
-
-bot.run(Token)
->>>>>>> Stashed changes
