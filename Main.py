@@ -10,23 +10,24 @@ print("Token is: " + Token + "\n")
 async def on_ready():
   print("online", bot.user.name)
 
-# Only uncomment the following code if know your channel id's
-@bot.command()
+## Only uncomment the following code if know your channel id's
+
+## You have to type in hi in the channel for the Welcoming members function to work....
+# @bot.command()
 # async def hi(ctx):
-#   channel_id = input("What is your channel id? (Would be used to welcome new members)") ## This is a command for welcoming new mwmbers
+#   channel_id = (Input your channel id here)  ## This is a command for welcoming new members
 #   if ctx.channel.id == channel_id:
 #     author_name = ctx.author.name
 #     await ctx.channel.send(
 #       'This is the designated channel for welcoming new members!')
 #     await ctx.send("Hi " + author_name)
 
-
+## Use the following format: testmessage @XXXXXX "THE MESSAGE YOU WANT TO SEND"(While sending the message, don't use double quotes)
 # @bot.command()
-# async def testmessage(ctx, user_mention, *, message):
-#   if ctx.channel.id ==:
+# async def testmessage(ctx, user_mention, *, message): 
+#   if ctx.channel.id == (Input your channel id here) : This is a command for sending messages to members
 #     user_send = ctx.message.mentions[0]
 #     await user_send.send("Message: " + message + " from " + ctx.author.name)
 #   else:
 #     None
-
-bot.run(Token)
+  bot.run(Token)
