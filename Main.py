@@ -6,11 +6,12 @@ bot = commands.Bot(command_prefix='', intents=intents)
 Token = input("What is your token? ")
 print("Token is: " + Token + "\n")
 
+## This is the indicator that the bot is online
 @bot.event
 async def on_ready():
   print("online", bot.user.name)
 
-## Only uncomment the following code if know your channel id's
+## Only uncomment the following code if have a server and if you know your channel id's
 
 ## You have to type in hi in the channel for the Welcoming members function to work....
 # @bot.command()
@@ -29,5 +30,5 @@ async def on_ready():
 #     user_send = ctx.message.mentions[0]
 #     await user_send.send("Message: " + message + " from " + ctx.author.name)
 #   else:
-#     None
+#     None  
   bot.run(Token)
