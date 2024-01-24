@@ -1,3 +1,5 @@
+import datetime
+import time
 import discord
 from discord.ext import commands
 
@@ -31,4 +33,16 @@ async def on_ready():
 #     await user_send.send("Message: " + message + " from " + ctx.author.name)
 #   else:
 #     None  
-  bot.run(Token)
+  
+## Type in hi in the channel to make the current date and time work
+# @bot.command()
+# async def currenttime(ctx):
+#   if ctx.channel.id == 1199682638668107877:
+#     current_date = datetime.datetime.now()
+#     current_time = datetime.datetime.now().time()
+#     formatted_date = current_date.strftime('%m-%d-%Y')
+#     formatted_time = current_time.strftime('%I:%M:%S %p')
+#     await ctx.channel.send(formatted_date)
+#     await ctx.channel.send(formatted_time)
+
+bot.run(Token)
