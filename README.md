@@ -5,15 +5,13 @@ FIRST of all, if you guys don't have the discord module downloaded, please use t
 
     pip install discord.py
 
-After that, if the code shows the following error,
 
-No module named 'discord', line 1, in <module>
-    import discord
-ModuleNotFoundError: No module named 'discord',
+NOTES:
 
-Go to the interpretor and locate where you downloaded the discord.py file.
+If you want to change the timezone, here is the link to all the pytz timezones:
 
-After that, copy the path and change the interpretor and you are all good to go.
+    https://mljar.com/blog/list-pytz-timezones/
+
 
 
 
